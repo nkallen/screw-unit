@@ -49,9 +49,9 @@ Click on a `describe` or `it` to run just those tests.
 
 A global `before` is a `before` block run before all tests in a test suite, regardless of their nesting. This is often useful to reset global variables, or blank-out DOM nodes before each test is run. Put this at the top of the your suite file or in your spec helper.
 
-    Screw.Unit(function() {
+    Screw.Unit(function(c) { with(c) {
       before(function() { ... });
-    });
+    }});
     
 Note that you can have any number of `Screw.Unit(...)` blocks in one file. Thus, you can have multiple global `befores` and `afters`.
 

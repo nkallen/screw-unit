@@ -1,3 +1,7 @@
 *.iml
 *.ipr
 *.iws
+.DS_Store
+pkg
+.rakeTasks
+.idea

@@ -1,0 +1,102 @@
+html {
+  padding: 0.1em;
+  font-family: sans-serif;
+}
+
+.description, .example {
+  display: none;
+}
+
+div#screwUnitRunner.showAll .description, div#screwUnitRunner.showAll .example {
+  display: block;
+}
+
+div#screwUnitRunner.showFailed .failed {
+  display: block;
+}
+
+
+table#screwUnitHeader {
+  width: 100%;
+}
+
+td#screwUnitControls {
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+}
+
+div#screwUnitProgressBar {
+  border: 1px solid #cccccc;
+  width: 100%;
+  height: 25px;
+  background: #252525;
+}
+
+div#screwUnitProgressText {
+  position: relative;
+  top: -20px;
+  padding-left: 5px;
+  color: white;
+}
+
+div#screwUnitProgressBar.failed div#screwUnitProgress {
+  background: red;
+}
+
+div#screwUnitProgressBar div#screwUnitProgress {
+  background: green;
+  height: 25px;
+}
+
+ul.descriptions.failed {
+  background-color: #F62B2B;
+}
+
+ul.descriptions.passed {
+  background-color: #1E7C0E;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: .3em;
+}
+
+ul.descriptions {
+  background: #e2e1e1;
+}
+
+li.description {
+  border: 1px solid #a4a4a4;
+}
+
+li.description span.name {
+  cursor: pointer;
+}
+
+ul.childDescriptions {
+  margin-left: .6em;
+  background: #e2e1e1;
+}
+
+li.example {
+  margin: 0;
+  padding: .3em;
+  background: white;
+}
+
+li.example span.name {
+  cursor: pointer;
+}
+
+
+li.example.passed {
+  background: #95ff95;
+}
+
+li.example.failed {
+  background: #ff9696;
+}

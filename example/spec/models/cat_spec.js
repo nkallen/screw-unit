@@ -1,4 +1,6 @@
-Screw.Unit(function() {
+//= require "../spec_helper"
+
+Screw.Unit(function(c) { with(c) {
   describe('Cat', function() {
     var cat;
     
@@ -28,4 +30,4 @@ Screw.Unit(function() {
       });
     });
   });
-});
+}});
